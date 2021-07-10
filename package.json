@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "license": "MIT",
     "scripts": {
-        "start": "webpack serve --open --config webpack.dev.js",
+        "start": "webpack-dev-server",
         "build": "webpack --config webpack.prod.js"
     },
     "dependencies": {
