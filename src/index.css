@@ -1,0 +1,122 @@
+.mainUI {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    /* allow click-through in transparent areas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.regionUI {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.buttonUI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+    filter: drop-shadow(0px 0px 20px white);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#enter.buttonUILoaded {
+    pointer-events: auto;
+}
+
+#btn {
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: .8em 1.6em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+#btn.fadeIn {
+    pointer-events: all;
+    opacity: 1;
+}
+
+#btn.fadeOut {
+    opacity: 0;
+}
+
+#textDiv {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: .8em 1.6em;
+    color: #FF9800;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 35px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
