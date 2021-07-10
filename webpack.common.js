@@ -96,6 +96,7 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         // Add HtmlWebpackPlugin entries to build individual HTML pages
         new HtmlWebpackPlugin({
+            tite: 'Production',
             // Input path
             template: 'src/index.html',
             // Output (within dist/)

@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "license": "MIT",
     "scripts": {
-        "start": "webpack-dev-server",
-        "build": "webpack"
+        "start": "webpack serve --open --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js"
     },
     "dependencies": {
         "@babel/core": "^7.14.6",
@@ -23,7 +23,8 @@
         "babel-loader": "^8.2.2",
         "css-loader": "^5.2.6",
         "mini-css-extract-plugin": "^2.1.0",
-        "url-loader": "^4.1.1"
+        "url-loader": "^4.1.1",
+        "webpack-merge": "^5.8.0"
     },
     "devDependencies": {
         "clean-webpack-plugin": "^0.1.19",
